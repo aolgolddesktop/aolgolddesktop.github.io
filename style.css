@@ -1,0 +1,163 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f2f5ff;
+}
+
+/* HEADER */
+.site-header {
+  background: #0057ff;
+  border-bottom: none;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 45px;
+}
+
+/* NAV */
+nav a {
+  color: #ffffff;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* FORM WRAPPER */
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 140px);
+}
+
+/* FORM BOX */
+.form-box {
+  background: #ffffff;
+  padding: 35px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* FORM ICON */
+.form-top-icon {
+  width: 70px;
+  margin-bottom: 12px;
+}
+
+/* HEADING */
+.form-box h2 {
+  margin-bottom: 18px;
+  color: #0057ff;
+  font-size: 22px;
+}
+
+/* INPUTS */
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #0057ff;
+  box-shadow: 0 0 5px rgba(0,87,255,0.2);
+}
+
+/* TEXTAREA */
+form textarea {
+  height: 80px;
+  resize: none;
+}
+
+/* BUTTON */
+form button {
+  width: 100%;
+  background: #0057ff;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0041c4;
+}
+
+/* LOADING */
+.loading-box {
+  font-weight: bold;
+  color: #0057ff;
+}
+
+.loading-box p {
+  margin-top: 10px;
+}
+
+/* SPINNER */
+.spinner {
+  width: 45px;
+  height: 45px;
+  border: 5px solid #e0e0e0;
+  border-top: 5px solid #0057ff;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* SUCCESS BOX */
+.success-box {
+  font-weight: bold;
+  color: #d93025;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+}
